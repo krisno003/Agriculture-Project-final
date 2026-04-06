@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Krisno</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+
+
+</head>
+
+<body>
+    <nav class="text-center top-bar bg-success fw-bold text-light p-2 fs-5">
+        Agriculture is the backbone of our economy, and we are here to support you every step of the way.
+    </nav>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" href="home.html">NK</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="guidesSection.html">Guides Section</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="pestsControl.html">Pest Control</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cropSection.html">Crop Section</a>
+                        </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-outline-dark" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Pest Control Hero Section -->
+    <section class="pest-hero">
+        <div class="pest-hero-overlay"></div>
+        <div class="pest-hero-content">
+            <h1 class="pest-hero-title">Integrated Pest Management</h1>
+            <p class="pest-hero-subtitle">Sustainable pest control solutions combining prevention, monitoring, and targeted interventions for healthy crops</p>
+            <div class="hero-search-bar">
+                <input type="text" id="searchPests" placeholder="Search pests, diseases, or control methods..." class="search-input">
+                <button class="search-btn">🔍 Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- IPM Approach Section -->
+    <section class="ipm-approach">
+        <div class="container">
+            <div class="section-header">
+                <span>Our Methodology</span>
+                <h2>4-Step IPM Approach</h2>
+                <p>Integrated Pest Management combines multiple strategies for effective, environmentally friendly pest control</p>
+            </div>
+
+            <div class="approach-grid">
+                <div class="approach-card">
+                    <div class="approach-icon">🔍</div>
+                    <h3>1. Monitor & Identify</h3>
+                    <p>Regular field scouting to identify pests, beneficial insects, and crop health indicators</p>
+                    <ul>
+                        <li>Weekly field inspections</li>
+                        <li>Pest identification guides</li>
+                        <li>Damage assessment</li>
+                        <li>Economic threshold determination</li>
+                    </ul>
+                </div>
+
+                <div class="approach-card">
+                    <div class="approach-icon">🛡️</div>
+                    <h3>2. Prevention First</h3>
+                    <p>Implement cultural and biological controls before chemical interventions</p>
+                    <ul>
+                        <li>Crop rotation practices</li>
+                        <li>Resistant variety selection</li>
+                        <li>Habitat manipulation</li>
+                        <li>Proper irrigation management</li>
+                    </ul>
+                </div>
+
+                <div class="approach-card">
+                    <div class="approach-icon">🎯</div>
+                    <h3>3. Targeted Control</h3>
+                    <p>Use least toxic methods first, escalating only when necessary</p>
+                    <ul>
+                        <li>Biological control agents</li>
+                        <li>Botanical pesticides</li>
+                        <li>Microbial insecticides</li>
+                        <li>Selective chemical controls</li>
+                    </ul>
+                </div>
+
+                <div class="approach-card">
+                    <div class="approach-icon">📊</div>
+                    <h3>4. Evaluate & Record</h3>
+                    <p>Track effectiveness and adjust strategies for continuous improvement</p>
+                    <ul>
+                        <li>Treatment efficacy monitoring</li>
+                        <li>Beneficial insect populations</li>
+                        <li>Crop yield impact</li>
+                        <li>Environmental impact assessment</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pest Categories Navigation -->
+    <section class="pest-categories">
+        <div class="container">
+            <div class="pest-category-buttons">
+                <button class="pest-category-btn active" data-pest-category="all">All Pests</button>
+                <button class="pest-category-btn" data-pest-category="insects">Insects</button>
+                <button class="pest-category-btn" data-pest-category="diseases">Diseases</button>
+                <button class="pest-category-btn" data-pest-category="weeds">Weeds</button>
+                <button class="pest-category-btn" data-pest-category="mites">Mites & Nematodes</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pest Control Solutions -->
+    <section class="pest-solutions">
+        <div class="container">
+            <div class="pest-grid">
+                <!-- Insect Pests -->
+                <div class="pest-card" data-pest-category="insects">
+                    <div class="pest-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?auto=format&fit=crop&w=400&q=80" alt="Rice Stem Borer">
+                        <div class="pest-category-badge insects">Insects</div>
+                    </div>
+                    <div class="pest-content">
+                        <h3>Rice Stem Borer</h3>
+                        <p class="pest-description">Major pest affecting rice crops, causing deadhearts and whiteheads</p>
+                        <div class="pest-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Scientific Name:</span>
+                                <span class="detail-value">Scirpophaga spp.</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Affected Crops:</span>
+                                <span class="detail-value">Rice, Wheat</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Season:</span>
+                                <span class="detail-value">Kharif & Rabi</span>
+                            </div>
+                        </div>
+                        <div class="control-methods">
+                            <h4>IPM Control Methods:</h4>
+                            <ul>
+                                <li>• Use resistant varieties (IR36, IR64)</li>
+                                <li>• Flood irrigation to kill larvae</li>
+                                <li>• Release Trichogramma wasps</li>
+                                <li>• Apply neem oil sprays</li>
+                            </ul>
+                        </div>
+                        <a href="#" class="view-details">View Detailed Control Guide →</a>
+                    </div>
+                </div>
+
+                <div class="pest-card" data-pest-category="insects">
+                    <div class="pest-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&w=400&q=80" alt="Aphids">
+                        <div class="pest-category-badge insects">Insects</div>
+                    </div>
+                    <div class="pest-content">
+                        <h3>Cotton Aphids</h3>
+                        <p class="pest-description">Sap-sucking insects that cause leaf curling and reduced boll formation</p>
+                        <div class="pest-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Scientific Name:</span>
+                                <span class="detail-value">Aphis gossypii</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Affected Crops:</span>
+                                <span class="detail-value">Cotton, Okra, Chili</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Season:</span>
+                                <span class="detail-value">Year-round</span>
+                            </div>
+                        </div>
+                        <div class="control-methods">
+                            <h4>IPM Control Methods:</h4>
+                            <ul>
+                                <li>• Encourage ladybird beetles</li>
+                                <li>• Apply soap water sprays</li>
+                                <li>• Use yellow sticky traps</li>
+                                <li>• Maintain plant spacing</li>
+                            </ul>
+                        </div>
+                        <a href="#" class="view-details">View Detailed Control Guide →</a>
+                    </div>
+                </div>
+
+                <!-- Diseases -->
+                <div class="pest-card" data-pest-category="diseases">
+                    <div class="pest-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?auto=format&fit=crop&w=400&q=80" alt="Rice Blast">
+                        <div class="pest-category-badge diseases">Diseases</div>
+                    </div>
+                    <div class="pest-content">
+                        <h3>Rice Blast Disease</h3>
+                        <p class="pest-description">Fungal disease causing diamond-shaped lesions on leaves and neck blast</p>
+                        <div class="pest-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Pathogen:</span>
+                                <span class="detail-value">Magnaporthe oryzae</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Affected Crops:</span>
+                                <span class="detail-value">Rice</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Conditions:</span>
+                                <span class="detail-value">High humidity, 25-30°C</span>
+                            </div>
+                        </div>
+                        <div class="control-methods">
+                            <h4>IPM Control Methods:</h4>
+                            <ul>
+                                <li>• Use resistant varieties</li>
+                                <li>• Avoid excessive nitrogen</li>
+                                <li>• Apply silicon fertilizers</li>
+                                <li>• Fungicide sprays when needed</li>
+                            </ul>
+                        </div>
+                        <a href="#" class="view-details">View Detailed Control Guide →</a>
+                    </div>
+                </div>
+
+                <div class="pest-card" data-pest-category="diseases">
+                    <div class="pest-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&w=400&q=80" alt="Late Blight">
+                        <div class="pest-category-badge diseases">Diseases</div>
+                    </div>
+                    <div class="pest-content">
+                        <h3>Potato Late Blight</h3>
+                        <p class="pest-description">Devastating disease causing rapid rotting of leaves and tubers</p>
+                        <div class="pest-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Pathogen:</span>
+                                <span class="detail-value">Phytophthora infestans</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Affected Crops:</span>
+                                <span class="detail-value">Potato, Tomato</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Conditions:</span>
+                                <span class="detail-value">Cool, wet weather</span>
+                            </div>
+                        </div>
+                        <div class="control-methods">
+                            <h4>IPM Control Methods:</h4>
+                            <ul>
+                                <li>• Plant resistant varieties</li>
+                                <li>• Improve air circulation</li>
+                                <li>• Copper-based fungicides</li>
+                                <li>• Remove infected plants</li>
+                            </ul>
+                        </div>
+                        <a href="#" class="view-details">View Detailed Control Guide →</a>
+                    </div>
+                </div>
+
+                <!-- Weeds -->
+                <div class="pest-card" data-pest-category="weeds">
+                    <div class="pest-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?auto=format&fit=crop&w=400&q=80" alt="Parthenium Weed">
+                        <div class="pest-category-badge weeds">Weeds</div>
+                    </div>
+                    <div class="pest-content">
+                        <h3>Parthenium Weed</h3>
+                        <p class="pest-description">Invasive weed causing allergies and reducing crop yields significantly</p>
+                        <div class="pest-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Scientific Name:</span>
+                                <span class="detail-value">Parthenium hysterophorus</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Affected Crops:</span>
+                                <span class="detail-value">All field crops</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Impact:</span>
+                                <span class="detail-value">Yield loss up to 40%</span>
+                            </div>
+                        </div>
+                        <div class="control-methods">
+                            <h4>IPM Control Methods:</h4>
+                            <ul>
+                                <li>• Manual weeding before flowering</li>
+                                <li>• Use allelopathic crops</li>
+                                <li>• Biological control with Zygogramma</li>
+                                <li>• Mulching to suppress growth</li>
+                            </ul>
+                        </div>
+                        <a href="#" class="view-details">View Detailed Control Guide →</a>
+                    </div>
+                </div>
+
+                <div class="pest-card" data-pest-category="weeds">
+                    <div class="pest-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?auto=format&fit=crop&w=400&q=80" alt="Striga Weed">
+                        <div class="pest-category-badge weeds">Weeds</div>
+                    </div>
+                    <div class="pest-content">
+                        <h3>Striga (Witchweed)</h3>
+                        <p class="pest-description">Parasitic weed that attaches to crop roots and steals nutrients</p>
+                        <div class="pest-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Scientific Name:</span>
+                                <span class="detail-value">Striga spp.</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Affected Crops:</span>
+                                <span class="detail-value">Maize, Sorghum, Millet</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Impact:</span>
+                                <span class="detail-value">Complete crop failure</span>
+                            </div>
+                        </div>
+                        <div class="control-methods">
+                            <h4>IPM Control Methods:</h4>
+                            <ul>
+                                <li>• Use resistant varieties</li>
+                                <li>• Crop rotation with legumes</li>
+                                <li>• Hand weeding at early stage</li>
+                                <li>• Soil solarization</li>
+                            </ul>
+                        </div>
+                        <a href="#" class="view-details">View Detailed Control Guide →</a>
+                    </div>
+                </div>
+
+                <!-- Mites & Nematodes -->
+                <div class="pest-card" data-pest-category="mites">
+                    <div class="pest-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&w=400&q=80" alt="Spider Mites">
+                        <div class="pest-category-badge mites">Mites</div>
+                    </div>
+                    <div class="pest-content">
+                        <h3>Two-Spotted Spider Mites</h3>
+                        <p class="pest-description">Tiny pests that cause stippling and webbing on leaves</p>
+                        <div class="pest-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Scientific Name:</span>
+                                <span class="detail-value">Tetranychus urticae</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Affected Crops:</span>
+                                <span class="detail-value">Cotton, Beans, Tomato</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Conditions:</span>
+                                <span class="detail-value">Hot, dry weather</span>
+                            </div>
+                        </div>
+                        <div class="control-methods">
+                            <h4>IPM Control Methods:</h4>
+                            <ul>
+                                <li>• Increase humidity</li>
+                                <li>• Spray water to dislodge mites</li>
+                                <li>• Release predatory mites</li>
+                                <li>• Apply neem oil sprays</li>
+                            </ul>
+                        </div>
+                        <a href="#" class="view-details">View Detailed Control Guide →</a>
+                    </div>
+                </div>
+
+                <div class="pest-card" data-pest-category="mites">
+                    <div class="pest-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?auto=format&fit=crop&w=400&q=80" alt="Root Knot Nematodes">
+                        <div class="pest-category-badge mites">Nematodes</div>
+                    </div>
+                    <div class="pest-content">
+                        <h3>Root Knot Nematodes</h3>
+                        <p class="pest-description">Microscopic worms that cause galls on roots and stunted growth</p>
+                        <div class="pest-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Scientific Name:</span>
+                                <span class="detail-value">Meloidogyne spp.</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Affected Crops:</span>
+                                <span class="detail-value">Tomato, Potato, Eggplant</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Impact:</span>
+                                <span class="detail-value">Yield loss up to 30%</span>
+                            </div>
+                        </div>
+                        <div class="control-methods">
+                            <h4>IPM Control Methods:</h4>
+                            <ul>
+                                <li>• Use resistant varieties</li>
+                                <li>• Soil solarization</li>
+                                <li>• Crop rotation</li>
+                                <li>• Apply neem cake</li>
+                            </ul>
+                        </div>
+                        <a href="#" class="view-details">View Detailed Control Guide →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Biological Control Section -->
+    <section class="biological-control">
+        <div class="container">
+            <div class="section-header">
+                <span>Nature's Allies</span>
+                <h2>Biological Control Agents</h2>
+                <p>Harnessing beneficial insects and microorganisms for natural pest control</p>
+            </div>
+
+            <div class="biological-grid">
+                <div class="biological-card">
+                    <div class="biological-icon">🐞</div>
+                    <h3>Ladybird Beetles</h3>
+                    <p>Predatory insects that devour aphids, mites, and other soft-bodied pests</p>
+                    <div class="usage-tips">
+                        <strong>Best for:</strong> Aphids, spider mites, mealybugs<br>
+                        <strong>Release rate:</strong> 10-20 per 100 sq.m<br>
+                        <strong>Active period:</strong> Year-round in tropical climates
+                    </div>
+                </div>
+
+                <div class="biological-card">
+                    <div class="biological-icon">🦋</div>
+                    <h3>Trichogramma Wasps</h3>
+                    <p>Parasitic wasps that lay eggs inside pest insect eggs, preventing hatching</p>
+                    <div class="usage-tips">
+                        <strong>Best for:</strong> Stem borers, fruit borers<br>
+                        <strong>Release rate:</strong> 50,000 per hectare<br>
+                        <strong>Active period:</strong> During egg-laying season
+                    </div>
+                </div>
+
+                <div class="biological-card">
+                    <div class="biological-icon">🕷️</div>
+                    <h3>Predatory Mites</h3>
+                    <p>Natural enemies of spider mites and other mite species</p>
+                    <div class="usage-tips">
+                        <strong>Best for:</strong> Spider mites, russet mites<br>
+                        <strong>Release rate:</strong> 25,000 per hectare<br>
+                        <strong>Active period:</strong> Hot, dry conditions
+                    </div>
+                </div>
+
+                <div class="biological-card">
+                    <div class="biological-icon">🦠</div>
+                    <h3>Bacillus thuringiensis (Bt)</h3>
+                    <p>Bacterial insecticide that targets caterpillar pests specifically</p>
+                    <div class="usage-tips">
+                        <strong>Best for:</strong> Caterpillars, leaf-eating larvae<br>
+                        <strong>Dosage:</strong> 1-2 kg per hectare<br>
+                        <strong>Safety:</strong> Safe for beneficial insects
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pest Modal -->
+    <div id="pestModal" class="pest-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Pest Control Details</h2>
+                <span class="modal-close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <img src="" alt="Pest Image" class="modal-image">
+                <div class="modal-details">
+                    <div class="detail-section">
+                        <h4>Identification</h4>
+                        <p class="modal-description">Detailed description will be loaded here.</p>
+                    </div>
+                    <div class="detail-section">
+                        <h4>Life Cycle & Behavior</h4>
+                        <p>Information about pest life cycle and behavior patterns.</p>
+                    </div>
+                    <div class="detail-section">
+                        <h4>Integrated Control Strategies</h4>
+                        <ul>
+                            <li>Cultural control methods</li>
+                            <li>Biological control options</li>
+                            <li>Chemical control (when necessary)</li>
+                            <li>Monitoring and prevention</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <section class="impact-stats">
+            <div class="stat-box">
+                <h2 class="counter">50k+</h2>
+                <p>Farmers Registered</p>
+            </div>
+            <div class="stat-box">
+                <h2 class="counter">120</h2>
+                <p>Hub Centers</p>
+            </div>
+            <div class="stat-box">
+                <h2 class="counter">15%</h2>
+                <p>Yield Increase</p>
+            </div>
+            <div class="stat-box">
+                <h2 class="counter">24/7</h2>
+                <p>Expert Support</p>
+            </div>
+        </section>
+        <section class="cta-expert">
+            <div class="cta-content">
+                <h2>Facing issues with your crops?</h2>
+                <p>Contact our certified agronomists for immediate solutions via phone or video call.</p>
+                <div class="cta-buttons">
+                    <a href="tel:+8001866137929" class="btn-main">📞 Call +800 1866137929</a>
+                    <a href="#" class="btn-whatsapp">Chat on WhatsApp</a>
+                </div>
+            </div>
+        </section>
+        <section class="live-data-bar">
+            <div class="data-item">
+                <span class="label">📍 Dhaka:</span>
+                <span class="value" id="weather-info">Loading...</span>
+            </div>
+            <div class="data-item">
+                <span class="label">🌾 Fine Rice (KG):</span>
+                <span class="value">৳ 68.00</span>
+            </div>
+            <div class="data-item">
+                <span class="label">🥔 Potato (KG):</span>
+                <span class="value">৳ 35.00</span>
+            </div>
+            <div class="data-item">
+                <span class="label">📅 Date:</span>
+                <span class="value" id="bd-date">Loading...</span>
+            </div>
+            <div class="data-item">
+                <span class="label">⏰ Time:</span>
+                <span class="value" id="bd-time">Loading...</span>
+            </div>
+        </section>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

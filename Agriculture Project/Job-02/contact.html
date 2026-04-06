@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Krisno</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+
+  <body>
+    <nav class="text-center top-bar bg-success fw-bold text-light p-2 fs-5">
+      Agriculture is the backbone of our economy, and we are here to support you
+      every step of the way.
+    </nav>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold" href="home.html">NK</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="home.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="guidesSection.html">Guides Section</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pestsControl.html">Pest Control</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cropSection.html">Crop Section</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-dark" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    
+
+    <section class="contact-form-section py-5">
+        <div class="container">
+            <div class="row gx-5 align-items-center">
+                <div class="col-lg-5 mb-4">
+                    <div class="contact-info-card p-4 rounded-4 shadow-sm bg-white">
+                        <span class="badge bg-success text-white mb-3">Agricultural Extension</span>
+                        <h2 class="mb-3">Reach Our Expert Team</h2>
+                        <p class="mb-4">Submit an inquiry, request field advice, or share documents and images for faster support from our agricultural extension services.</p>
+                        <ul class="list-unstyled contact-info-list mb-4">
+                            <li><strong>Phone:</strong> <a href="tel:+88001866137929">+880 1866 137929</a></li>
+                            <li><strong>Email:</strong> <a href="mailto:help@krisnoagri.com">help@krisnoagri.com</a></li>
+                            <li><strong>WhatsApp:</strong> <a href="https://wa.me/8801866137929">Chat now</a></li>
+                            <li><strong>Office:</strong> Dhaka Agricultural Hub, Bangladesh</li>
+                        </ul>
+                        <div class="glow-call p-3 rounded-4">
+                            <p class="mb-1 fw-bold">Need urgent guidance?</p>
+                            <p class="mb-0">Our extension team is available for direct communication and field consultation.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="contact-form-card p-4 rounded-4 shadow-sm bg-white">
+                        <span class="badge bg-warning text-dark mb-3">Submit Your Request</span>
+                        <h3 class="mb-4">Send Inquiry or Request Support</h3>
+                        <form id="extension-contact-form" class="contact-form" enctype="multipart/form-data">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="fullName" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Your full name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="emailAddress" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="emailAddress" name="emailAddress" placeholder="name@example.com" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="phoneNumber" class="form-label">Phone Number</label>
+                                    <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Optional phone number">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="expertiseField" class="form-label">Field of Inquiry</label>
+                                    <select class="form-select" id="expertiseField" name="expertiseField" required>
+                                        <option value="">Choose an option</option>
+                                        <option value="crop-management">Crop Management</option>
+                                        <option value="pest-control">Pest Control</option>
+                                        <option value="soil-health">Soil Health</option>
+                                        <option value="irrigation">Irrigation Advice</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label for="messageText" class="form-label">Message / Inquiry</label>
+                                    <textarea class="form-control" id="messageText" name="messageText" rows="5" placeholder="Describe your needs, symptoms, or the advice you need." required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <label for="attachment" class="form-label">Optional Attachment</label>
+                                    <input class="form-control" type="file" id="attachment" name="attachment" accept="image/*,.pdf,.doc,.docx">
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-success btn-lg w-100">Send Request</button>
+                                </div>
+                            </div>
+                            <div id="contactFormAlert" class="alert alert-success mt-4 d-none" role="alert"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="impact-stats">
+      <div class="stat-box">
+        <h2 class="counter">50k+</h2>
+        <p>Farmers Registered</p>
+      </div>
+      <div class="stat-box">
+        <h2 class="counter">120</h2>
+        <p>Hub Centers</p>
+      </div>
+      <div class="stat-box">
+        <h2 class="counter">15%</h2>
+        <p>Yield Increase</p>
+      </div>
+      <div class="stat-box">
+        <h2 class="counter">24/7</h2>
+        <p>Expert Support</p>
+      </div>
+    </section>
+    <section class="cta-expert">
+      <div class="cta-content">
+        <h2>Facing issues with your crops?</h2>
+        <p>
+          Contact our certified agronomists for immediate solutions via phone or
+          video call.
+        </p>
+        <div class="cta-buttons">
+          <a href="tel:+8001866137929" class="btn-main"
+            >📞 Call +800 1866137929</a
+          >
+          <a href="#" class="btn-whatsapp">Chat on WhatsApp</a>
+        </div>
+      </div>
+    </section>
+    <section class="live-data-bar">
+      <div class="data-item">
+        <span class="label">📍 Dhaka:</span>
+        <span class="value" id="weather-info">Loading...</span>
+      </div>
+      <div class="data-item">
+        <span class="label">🌾 Fine Rice (KG):</span>
+        <span class="value">৳ 68.00</span>
+      </div>
+      <div class="data-item">
+        <span class="label">🥔 Potato (KG):</span>
+        <span class="value">৳ 35.00</span>
+      </div>
+      <div class="data-item">
+        <span class="label">📅 Date:</span>
+        <span class="value" id="bd-date">Loading...</span>
+      </div>
+      <div class="data-item">
+        <span class="label">⏰ Time:</span>
+        <span class="value" id="bd-time">Loading...</span>
+      </div>
+    </section>
+    <footer class="footer footer-horizontal footer-center bg-primary text-primary-content p-10">
+      <aside>
+        <svg
+          width="50"
+          height="50"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          class="inline-block fill-current"
+        >
+          <path
+            d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z"
+          ></path>
+        </svg>
+        <p class="font-bold">
+          KCB Industries Ltd.
+          <br />
+          Providing reliable tech since 2020.
+        </p>
+        <p>Copyright © <span id="year"></span> - All rights reserved</p>
+      </aside>
+      <nav>
+        <div class="grid grid-flow-col gap-4">
+          <a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current"
+            >
+              <path
+                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+              ></path>
+            </svg>
+          </a>
+          <a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current"
+            >
+              <path
+                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
+              ></path>
+            </svg>
+          </a>
+          <a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current"
+            >
+              <path
+                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </nav>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="js/script.js"></script>
+   
+  </body>
+</html>

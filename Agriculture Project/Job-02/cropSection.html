@@ -1,0 +1,645 @@
+z<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Krisno</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+
+
+</head>
+
+<body>
+    <nav class="text-center top-bar bg-success fw-bold text-light p-2 fs-5">
+        Agriculture is the backbone of our economy, and we are here to support you every step of the way.
+    </nav>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" href="home.html">NK</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="guidesSection.html">Guides Section</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="pestsControl.html">Pest Control</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="cropSection.html">Crop Section</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-outline-dark" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Crop Information Section -->
+    <main class="crop-main">
+        <!-- Hero Banner -->
+        <section class="crop-hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="hero-title fade-in-down">Comprehensive Crop Guide</h1>
+                <p class="hero-subtitle fade-in-up">Discover varieties, cultivation methods, and harvesting techniques for optimal yields</p>
+                <div class="search-bar fade-in">
+                    <input type="text" id="searchCrops" placeholder="Search crops..." class="search-input">
+                    <button class="search-btn">🔍</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Crop Categories Navigation -->
+        <section class="crop-categories">
+            <div class="container">
+                <div class="category-tabs">
+                    <button class="crop-cat-btn active" data-category="all">🌾 All Crops</button>
+                    <button class="crop-cat-btn" data-category="grains">🌾 Grains</button>
+                    <button class="crop-cat-btn" data-category="vegetables">🥬 Vegetables</button>
+                    <button class="crop-cat-btn" data-category="fruits">🍎 Fruits</button>
+                    <button class="crop-cat-btn" data-category="cash">💰 Cash Crops</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Grains Section -->
+        <section class="crop-section grains-section active" id="grains">
+            <div class="container">
+                <div class="section-header">
+                    <h2>🌾 Grains & Cereals</h2>
+                    <p>Staple crops that form the foundation of global food security</p>
+                </div>
+
+                <div class="crop-grid">
+                    <!-- Rice -->
+                    <div class="crop-card" data-crop="rice">
+                        <div class="crop-image">
+                            <img src="https://images.unsplash.com/photo-1536304993881-ff6e9eefa2a6?auto=format&fit=crop&w=500&q=60" alt="Rice">
+                            <div class="crop-badge">Grain</div>
+                        </div>
+                        <div class="crop-content">
+                            <h3>Rice (Oryza sativa)</h3>
+                            <div class="crop-details">
+                                <div class="detail-item">
+                                    <strong>Varieties:</strong> Basmati, Jasmine, Brown, White, Parboiled
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Soil:</strong> Clay-loam, pH 5.5-6.5, well-drained
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Climate:</strong> Tropical, 20-35°C, high humidity
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Harvest:</strong> 90-150 days, when grains turn golden
+                                </div>
+                            </div>
+                            <div class="nutrition-info">
+                                <h4>Nutritional Value (per 100g cooked)</h4>
+                                <ul>
+                                    <li>Calories: 130</li>
+                                    <li>Carbs: 28g</li>
+                                    <li>Protein: 2.7g</li>
+                                    <li>Fiber: 0.4g</li>
+                                </ul>
+                            </div>
+                            <div class="uses">
+                                <h4>Uses & Benefits</h4>
+                                <p>Primary staple food, source of carbohydrates, gluten-free, supports digestion</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Wheat -->
+                    <div class="crop-card" data-crop="wheat">
+                        <div class="crop-image">
+                            <img src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&w=500&q=60" alt="Wheat">
+                            <div class="crop-badge">Grain</div>
+                        </div>
+                        <div class="crop-content">
+                            <h3>Wheat (Triticum aestivum)</h3>
+                            <div class="crop-details">
+                                <div class="detail-item">
+                                    <strong>Varieties:</strong> Hard Red, Soft White, Durum, Spelt
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Soil:</strong> Well-drained loam, pH 6.0-7.0
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Climate:</strong> Temperate, 15-25°C, moderate rainfall
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Harvest:</strong> 100-120 days, when grains are hard
+                                </div>
+                            </div>
+                            <div class="nutrition-info">
+                                <h4>Nutritional Value (per 100g)</h4>
+                                <ul>
+                                    <li>Calories: 339</li>
+                                    <li>Carbs: 75g</li>
+                                    <li>Protein: 13g</li>
+                                    <li>Fiber: 12.2g</li>
+                                </ul>
+                            </div>
+                            <div class="uses">
+                                <h4>Uses & Benefits</h4>
+                                <p>Bread, pasta, breakfast cereals, gluten source, energy provider</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Maize -->
+                    <div class="crop-card" data-crop="maize">
+                        <div class="crop-image">
+                            <img src="https://images.unsplash.com/photo-1551754655-cd27e38d2076?auto=format&fit=crop&w=500&q=60" alt="Maize">
+                            <div class="crop-badge">Grain</div>
+                        </div>
+                        <div class="crop-content">
+                            <h3>Maize/Corn (Zea mays)</h3>
+                            <div class="crop-details">
+                                <div class="detail-item">
+                                    <strong>Varieties:</strong> Sweet, Dent, Flint, Popcorn, Flour
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Soil:</strong> Fertile, well-drained, pH 5.8-7.0
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Climate:</strong> Warm, 20-30°C, adequate moisture
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Harvest:</strong> 60-100 days, when kernels are milky
+                                </div>
+                            </div>
+                            <div class="nutrition-info">
+                                <h4>Nutritional Value (per 100g)</h4>
+                                <ul>
+                                    <li>Calories: 86</li>
+                                    <li>Carbs: 19g</li>
+                                    <li>Protein: 3.3g</li>
+                                    <li>Fiber: 2.7g</li>
+                                </ul>
+                            </div>
+                            <div class="uses">
+                                <h4>Uses & Benefits</h4>
+                                <p>Animal feed, corn oil, sweeteners, bioethanol, human consumption</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vegetables Section -->
+        <section class="crop-section vegetables-section" id="vegetables">
+            <div class="container">
+                <div class="section-header">
+                    <h2>🥬 Vegetables</h2>
+                    <p>Nutrient-rich crops essential for balanced diets and health</p>
+                </div>
+
+                <div class="crop-grid">
+                    <!-- Potato -->
+                    <div class="crop-card" data-crop="potato">
+                        <div class="crop-image">
+                            <img src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=500&q=60" alt="Potato">
+                            <div class="crop-badge">Vegetable</div>
+                        </div>
+                        <div class="crop-content">
+                            <h3>Potato (Solanum tuberosum)</h3>
+                            <div class="crop-details">
+                                <div class="detail-item">
+                                    <strong>Varieties:</strong> Russet, Yukon Gold, Red, Fingerling
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Soil:</strong> Loose, well-drained, pH 5.0-6.5
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Climate:</strong> Cool, 15-20°C, avoid frost
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Harvest:</strong> 70-120 days, when vines die back
+                                </div>
+                            </div>
+                            <div class="nutrition-info">
+                                <h4>Nutritional Value (per 100g)</h4>
+                                <ul>
+                                    <li>Calories: 77</li>
+                                    <li>Carbs: 17g</li>
+                                    <li>Protein: 2g</li>
+                                    <li>Vitamin C: 19.7mg</li>
+                                </ul>
+                            </div>
+                            <div class="uses">
+                                <h4>Uses & Benefits</h4>
+                                <p>Versatile cooking, chips, starch, animal feed, industrial uses</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tomato -->
+                    <div class="crop-card" data-crop="tomato">
+                        <div class="crop-image">
+                            <img src="https://images.unsplash.com/photo-1546470427-e9b3ba2e4c1b?auto=format&fit=crop&w=500&q=60" alt="Tomato">
+                            <div class="crop-badge">Vegetable</div>
+                        </div>
+                        <div class="crop-content">
+                            <h3>Tomato (Solanum lycopersicum)</h3>
+                            <div class="crop-details">
+                                <div class="detail-item">
+                                    <strong>Varieties:</strong> Beefsteak, Cherry, Roma, Heirloom
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Soil:</strong> Well-drained, pH 6.0-6.8, rich organic matter
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Climate:</strong> Warm, 20-25°C, full sun
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Harvest:</strong> 60-80 days, when fully colored
+                                </div>
+                            </div>
+                            <div class="nutrition-info">
+                                <h4>Nutritional Value (per 100g)</h4>
+                                <ul>
+                                    <li>Calories: 18</li>
+                                    <li>Carbs: 3.9g</li>
+                                    <li>Protein: 0.9g</li>
+                                    <li>Vitamin C: 14mg</li>
+                                </ul>
+                            </div>
+                            <div class="uses">
+                                <h4>Uses & Benefits</h4>
+                                <p>Fresh consumption, sauces, ketchup, lycopene source, antioxidant</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Onion -->
+                    <div class="crop-card" data-crop="onion">
+                        <div class="crop-image">
+                            <img src="https://images.unsplash.com/photo-1580201092675-a0a6a6cafbb1?auto=format&fit=crop&w=500&q=60" alt="Onion">
+                            <div class="crop-badge">Vegetable</div>
+                        </div>
+                        <div class="crop-content">
+                            <h3>Onion (Allium cepa)</h3>
+                            <div class="crop-details">
+                                <div class="detail-item">
+                                    <strong>Varieties:</strong> Red, White, Yellow, Sweet, Shallots
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Soil:</strong> Fertile, well-drained, pH 6.0-7.0
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Climate:</strong> Cool to warm, 13-24°C
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Harvest:</strong> 100-120 days, when tops fall over
+                                </div>
+                            </div>
+                            <div class="nutrition-info">
+                                <h4>Nutritional Value (per 100g)</h4>
+                                <ul>
+                                    <li>Calories: 40</li>
+                                    <li>Carbs: 9.3g</li>
+                                    <li>Protein: 1.1g</li>
+                                    <li>Vitamin C: 7.4mg</li>
+                                </ul>
+                            </div>
+                            <div class="uses">
+                                <h4>Uses & Benefits</h4>
+                                <p>Cooking flavor, medicinal properties, anti-inflammatory, heart health</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fruits Section -->
+        <section class="crop-section fruits-section" id="fruits">
+            <div class="container">
+                <div class="section-header">
+                    <h2>🍎 Fruits</h2>
+                    <p>Sweet and nutritious crops packed with vitamins and minerals</p>
+                </div>
+
+                <div class="crop-grid">
+                    <!-- Mango -->
+                    <div class="crop-card" data-crop="mango">
+                        <div class="crop-image">
+                            <img src="https://images.unsplash.com/photo-1553279768-865429fa0078?auto=format&fit=crop&w=500&q=60" alt="Mango">
+                            <div class="crop-badge">Fruit</div>
+                        </div>
+                        <div class="crop-content">
+                            <h3>Mango (Mangifera indica)</h3>
+                            <div class="crop-details">
+                                <div class="detail-item">
+                                    <strong>Varieties:</strong> Alphonso, Kesar, Totapuri, Langra
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Soil:</strong> Well-drained, pH 5.5-7.5, alluvial
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Climate:</strong> Tropical, 24-30°C, humid
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Harvest:</strong> 300-400 days, when mature
+                                </div>
+                            </div>
+                            <div class="nutrition-info">
+                                <h4>Nutritional Value (per 100g)</h4>
+                                <ul>
+                                    <li>Calories: 60</li>
+                                    <li>Carbs: 15g</li>
+                                    <li>Vitamin C: 36.4mg</li>
+                                    <li>Vitamin A: 1082 IU</li>
+                                </ul>
+                            </div>
+                            <div class="uses">
+                                <h4>Uses & Benefits</h4>
+                                <p>Fresh fruit, juices, pickles, vitamin A source, immune booster</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Banana -->
+                    <div class="crop-card" data-crop="banana">
+                        <div class="crop-image">
+                            <img src="https://images.unsplash.com/photo-1571771019784-3ff35f4f4277?auto=format&fit=crop&w=500&q=60" alt="Banana">
+                            <div class="crop-badge">Fruit</div>
+                        </div>
+                        <div class="crop-content">
+                            <h3>Banana (Musa paradisiaca)</h3>
+                            <div class="crop-details">
+                                <div class="detail-item">
+                                    <strong>Varieties:</strong> Cavendish, Plantain, Red, Lady Finger
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Soil:</strong> Fertile, well-drained, pH 6.0-7.5
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Climate:</strong> Tropical, 27°C, high rainfall
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Harvest:</strong> 9-12 months, when fruits mature
+                                </div>
+                            </div>
+                            <div class="nutrition-info">
+                                <h4>Nutritional Value (per 100g)</h4>
+                                <ul>
+                                    <li>Calories: 89</li>
+                                    <li>Carbs: 23g</li>
+                                    <li>Potassium: 358mg</li>
+                                    <li>Vitamin B6: 0.4mg</li>
+                                </ul>
+                            </div>
+                            <div class="uses">
+                                <h4>Uses & Benefits</h4>
+                                <p>Energy food, potassium source, digestive health, blood pressure control</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Orange -->
+                    <div class="crop-card" data-crop="orange">
+                        <div class="crop-image">
+                            <img src="https://images.unsplash.com/photo-1547514701-42782101795e?auto=format&fit=crop&w=500&q=60" alt="Orange">
+                            <div class="crop-badge">Fruit</div>
+                        </div>
+                        <div class="crop-content">
+                            <h3>Orange (Citrus sinensis)</h3>
+                            <div class="crop-details">
+                                <div class="detail-item">
+                                    <strong>Varieties:</strong> Valencia, Navel, Blood, Mandarin
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Soil:</strong> Well-drained, pH 6.0-6.5, sandy loam
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Climate:</strong> Subtropical, 13-32°C, frost-free
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Harvest:</strong> 7-12 months, when fully colored
+                                </div>
+                            </div>
+                            <div class="nutrition-info">
+                                <h4>Nutritional Value (per 100g)</h4>
+                                <ul>
+                                    <li>Calories: 47</li>
+                                    <li>Carbs: 12g</li>
+                                    <li>Vitamin C: 53.2mg</li>
+                                    <li>Fiber: 2.4g</li>
+                                </ul>
+                            </div>
+                            <div class="uses">
+                                <h4>Uses & Benefits</h4>
+                                <p>Fresh fruit, juices, vitamin C source, immune system support</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cash Crops Section -->
+        <section class="crop-section cash-section" id="cash">
+            <div class="container">
+                <div class="section-header">
+                    <h2>💰 Cash Crops</h2>
+                    <p>High-value crops grown primarily for profit and export</p>
+                </div>
+
+                <div class="crop-grid">
+                    <!-- Cotton -->
+                    <div class="crop-card" data-crop="cotton">
+                        <div class="crop-image">
+                            <img src="https://images.unsplash.com/photo-1593691509543-c55fb32d8de5?auto=format&fit=crop&w=500&q=60" alt="Cotton">
+                            <div class="crop-badge">Cash Crop</div>
+                        </div>
+                        <div class="crop-content">
+                            <h3>Cotton (Gossypium)</h3>
+                            <div class="crop-details">
+                                <div class="detail-item">
+                                    <strong>Varieties:</strong> Upland, Pima, Egyptian, Sea Island
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Soil:</strong> Well-drained, pH 5.8-8.0, fertile
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Climate:</strong> Warm, 21-32°C, moderate rainfall
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Harvest:</strong> 150-180 days, when bolls open
+                                </div>
+                            </div>
+                            <div class="nutrition-info">
+                                <h4>Economic Value</h4>
+                                <ul>
+                                    <li>Fiber for textiles</li>
+                                    <li>Oil from seeds</li>
+                                    <li>Global trade commodity</li>
+                                    <li>High export value</li>
+                                </ul>
+                            </div>
+                            <div class="uses">
+                                <h4>Uses & Benefits</h4>
+                                <p>Textiles, clothing, oil production, livestock feed, industrial uses</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Coffee -->
+                    <div class="crop-card" data-crop="coffee">
+                        <div class="crop-image">
+                            <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&w=500&q=60" alt="Coffee">
+                            <div class="crop-badge">Cash Crop</div>
+                        </div>
+                        <div class="crop-content">
+                            <h3>Coffee (Coffea arabica)</h3>
+                            <div class="crop-details">
+                                <div class="detail-item">
+                                    <strong>Varieties:</strong> Arabica, Robusta, Liberica
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Soil:</strong> Well-drained, pH 6.0-6.5, volcanic
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Climate:</strong> Tropical, 15-24°C, high altitude
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Harvest:</strong> 3-4 years to first crop, annual thereafter
+                                </div>
+                            </div>
+                            <div class="nutrition-info">
+                                <h4>Economic Value</h4>
+                                <ul>
+                                    <li>Global beverage market</li>
+                                    <li>High export earnings</li>
+                                    <li>Premium specialty coffees</li>
+                                    <li>Sustainable farming potential</li>
+                                </ul>
+                            </div>
+                            <div class="uses">
+                                <h4>Uses & Benefits</h4>
+                                <p>Beverage, antioxidants, employment generation, foreign exchange</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tea -->
+                    <div class="crop-card" data-crop="tea">
+                        <div class="crop-image">
+                            <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=500&q=60" alt="Tea">
+                            <div class="crop-badge">Cash Crop</div>
+                        </div>
+                        <div class="crop-content">
+                            <h3>Tea (Camellia sinensis)</h3>
+                            <div class="crop-details">
+                                <div class="detail-item">
+                                    <strong>Varieties:</strong> Assam, Darjeeling, Ceylon, Green Tea
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Soil:</strong> Acidic, well-drained, pH 4.5-5.5
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Climate:</strong> Subtropical, 13-32°C, high rainfall
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Harvest:</strong> 3-5 years to maturity, continuous plucking
+                                </div>
+                            </div>
+                            <div class="nutrition-info">
+                                <h4>Economic Value</h4>
+                                <ul>
+                                    <li>Global beverage industry</li>
+                                    <li>Employment intensive</li>
+                                    <li>Export commodity</li>
+                                    <li>Health benefits market</li>
+                                </ul>
+                            </div>
+                            <div class="uses">
+                                <h4>Uses & Benefits</h4>
+                                <p>Beverages, antioxidants, cultural significance, rural employment</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <section class="impact-stats">
+            <div class="stat-box">
+                <h2 class="counter">50k+</h2>
+                <p>Farmers Registered</p>
+            </div>
+            <div class="stat-box">
+                <h2 class="counter">120</h2>
+                <p>Hub Centers</p>
+            </div>
+            <div class="stat-box">
+                <h2 class="counter">15%</h2>
+                <p>Yield Increase</p>
+            </div>
+            <div class="stat-box">
+                <h2 class="counter">24/7</h2>
+                <p>Expert Support</p>
+            </div>
+        </section>
+        <section class="cta-expert">
+            <div class="cta-content">
+                <h2>Facing issues with your crops?</h2>
+                <p>Contact our certified agronomists for immediate solutions via phone or video call.</p>
+                <div class="cta-buttons">
+                    <a href="tel:+8001866137929" class="btn-main">📞 Call +800 1866137929</a>
+                    <a href="#" class="btn-whatsapp">Chat on WhatsApp</a>
+                </div>
+            </div>
+        </section>
+        <section class="live-data-bar">
+            <div class="data-item">
+                <span class="label">📍 Dhaka:</span>
+                <span class="value" id="weather-info">Loading...</span>
+            </div>
+            <div class="data-item">
+                <span class="label">🌾 Fine Rice (KG):</span>
+                <span class="value">৳ 68.00</span>
+            </div>
+            <div class="data-item">
+                <span class="label">🥔 Potato (KG):</span>
+                <span class="value">৳ 35.00</span>
+            </div>
+            <div class="data-item">
+                <span class="label">📅 Date:</span>
+                <span class="value" id="bd-date">Loading...</span>
+            </div>
+            <div class="data-item">
+                <span class="label">⏰ Time:</span>
+                <span class="value" id="bd-time">Loading...</span>
+            </div>
+        </section>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

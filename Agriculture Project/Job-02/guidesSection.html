@@ -1,0 +1,779 @@
+z<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Krisno</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+
+
+</head>
+
+<body>
+    <nav class="text-center top-bar bg-success fw-bold text-light p-2 fs-5">
+        Agriculture is the backbone of our economy, and we are here to support you every step of the way.
+    </nav>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" href="home.html">NK</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="guidesSection.html">Guides Section</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pestsControl.html">Pest Control</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cropSection.html">Crop Section</a>
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-outline-dark" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Guides & Tutorials Section -->
+    <main class="guides-section">
+        <!-- Hero Banner -->
+        <section class="guides-hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="hero-title fade-in-down">Master Farming Excellence</h1>
+                <p class="hero-subtitle fade-in-up">Comprehensive Guides & Tutorials for Modern Agriculture</p>
+                <div class="search-bar fade-in">
+                    <input type="text" id="searchGuides" placeholder="Search guides..." class="search-input">
+                    <button class="search-btn">🔍</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Filter Buttons -->
+        <section class="filter-section">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Guides</button>
+                    <button class="filter-btn" data-filter="soil">🌱 Soil Management</button>
+                    <button class="filter-btn" data-filter="irrigation">💧 Irrigation</button>
+                    <button class="filter-btn" data-filter="crop">🌾 Crop Techniques</button>
+                    <button class="filter-btn" data-filter="pest">🐛 Pest Management</button>
+                    <button class="filter-btn" data-filter="harvest">🎯 Harvesting</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Guides Grid -->
+        <section class="guides-container">
+            <div class="container">
+                <div class="guides-grid" id="guidesGrid">
+                    <!-- Guide Card 1 -->
+                    <article class="guide-card" data-category="soil">
+                        <div class="card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?auto=format&fit=crop&w=500&q=60" alt="Soil Preparation">
+                            <span class="category-badge soil">Soil Management</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Soil Preparation & Enrichment</h3>
+                            <p class="card-description">Learn the best practices for preparing nutrient-rich soil, testing pH levels, and enriching your fields with organic matter.</p>
+                            <div class="card-meta">
+                                <span class="read-time">📖 8 min read</span>
+                                <span class="difficulty">Beginner</span>
+                            </div>
+                            <a href="#" class="read-more">Explore Guide →</a>
+                        </div>
+                    </article>
+
+                    <!-- Guide Card 2 -->
+                    <article class="guide-card" data-category="irrigation">
+                        <div class="card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?auto=format&fit=crop&w=500&q=60" alt="Irrigation Systems">
+                            <span class="category-badge irrigation">Irrigation</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Modern Irrigation Systems</h3>
+                            <p class="card-description">Discover drip irrigation, sprinkler systems, and water conservation techniques to maximize crop yield while saving water.</p>
+                            <div class="card-meta">
+                                <span class="read-time">📖 10 min read</span>
+                                <span class="difficulty">Intermediate</span>
+                            </div>
+                            <a href="#" class="read-more">Explore Guide →</a>
+                        </div>
+                    </article>
+
+                    <!-- Guide Card 3 -->
+                    <article class="guide-card" data-category="crop">
+                        <div class="card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?auto=format&fit=crop&w=500&q=60" alt="Crop Rotation">
+                            <span class="category-badge crop">Crop Techniques</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Crop Rotation & Succession</h3>
+                            <p class="card-description">Master the art of crop rotation to maintain soil fertility, reduce pests, and increase long-term agricultural productivity.</p>
+                            <div class="card-meta">
+                                <span class="read-time">📖 7 min read</span>
+                                <span class="difficulty">Intermediate</span>
+                            </div>
+                            <a href="#" class="read-more">Explore Guide →</a>
+                        </div>
+                    </article>
+
+                    <!-- Guide Card 4 -->
+                    <article class="guide-card" data-category="pest">
+                        <div class="card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?auto=format&fit=crop&w=500&q=60" alt="Organic Pest Control">
+                            <span class="category-badge pest">Pest Management</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Organic Pest Management</h3>
+                            <p class="card-description">Learn sustainable and organic methods to combat pests without harmful chemicals while protecting biodiversity.</p>
+                            <div class="card-meta">
+                                <span class="read-time">📖 12 min read</span>
+                                <span class="difficulty">Advanced</span>
+                            </div>
+                            <a href="#" class="read-more">Explore Guide →</a>
+                        </div>
+                    </article>
+
+                    <!-- Guide Card 5 -->
+                    <article class="guide-card" data-category="harvest">
+                        <div class="card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?auto=format&fit=crop&w=500&q=60" alt="Harvesting Techniques">
+                            <span class="category-badge harvest">Harvesting</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Optimal Harvesting Techniques</h3>
+                            <p class="card-description">Discover the right timing, methods, and tools for harvesting different crops to maximize quality and yield.</p>
+                            <div class="card-meta">
+                                <span class="read-time">📖 9 min read</span>
+                                <span class="difficulty">Intermediate</span>
+                            </div>
+                            <a href="#" class="read-more">Explore Guide →</a>
+                        </div>
+                    </article>
+
+                    <!-- Guide Card 6 -->
+                    <article class="guide-card" data-category="soil">
+                        <div class="card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?auto=format&fit=crop&w=500&q=60" alt="Composting">
+                            <span class="category-badge soil">Soil Management</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Composting & Nutrient Management</h3>
+                            <p class="card-description">Master the composting process to create rich organic fertilizer and manage nutrients effectively throughout growing seasons.</p>
+                            <div class="card-meta">
+                                <span class="read-time">📖 11 min read</span>
+                                <span class="difficulty">Beginner</span>
+                            </div>
+                            <a href="#" class="read-more">Explore Guide →</a>
+                        </div>
+                    </article>
+
+                    <!-- Guide Card 7 -->
+                    <article class="guide-card" data-category="crop">
+                        <div class="card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?auto=format&fit=crop&w=500&q=60" alt="Seasonal Planting">
+                            <span class="category-badge crop">Crop Techniques</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Seasonal Planting Guide</h3>
+                            <p class="card-description">Understand crop seasonality, weather patterns, and optimal planting times for various crops in different regions.</p>
+                            <div class="card-meta">
+                                <span class="read-time">📖 6 min read</span>
+                                <span class="difficulty">Beginner</span>
+                            </div>
+                            <a href="#" class="read-more">Explore Guide →</a>
+                        </div>
+                    </article>
+
+                    <!-- Guide Card 8 -->
+                    <article class="guide-card" data-category="irrigation">
+                        <div class="card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?auto=format&fit=crop&w=500&q=60" alt="Water Conservation">
+                            <span class="category-badge irrigation">Irrigation</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Water Conservation Strategies</h3>
+                            <p class="card-description">Explore smart water management techniques including mulching, rainwater harvesting, and moisture retention methods.</p>
+                            <div class="card-meta">
+                                <span class="read-time">📖 8 min read</span>
+                                <span class="difficulty">Intermediate</span>
+                            </div>
+                            <a href="#" class="read-more">Explore Guide →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Tutorial Section -->
+        <section class="featured-tutorial">
+            <div class="container">
+                <div class="tutorial-content">
+                    <div class="tutorial-text">
+                        <h2>Featured Tutorial Series</h2>
+                        <h3>From Seed to Harvest: Complete Rice Farming Guide</h3>
+                        <p>A comprehensive 4-part video series covering everything from soil preparation to post-harvest handling. Perfect for both beginner and experienced farmers.</p>
+                        <ul class="tutorial-lessons">
+                            <li><span class="lesson-number">1</span> Soil Preparation & Germination</li>
+                            <li><span class="lesson-number">2</span> Transplanting & Growth Management</li>
+                            <li><span class="lesson-number">3</span> Water Management & Pest Control</li>
+                            <li><span class="lesson-number">4</span> Harvesting & Storage</li>
+                        </ul>
+                        <button class="btn-watch">▶️ Watch Full Series</button>
+                    </div>
+                    <div class="tutorial-video">
+                        <div class="video-placeholder">
+                            <div class="play-icon">▶️</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categorized Guides Section -->
+        <section class="categorized-guides">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Explore by Category</h2>
+                    <p>Find guides tailored to specific crops, seasons, and farming methods</p>
+                </div>
+
+                <!-- Category Tabs -->
+                <div class="category-tabs">
+                    <button class="cat-tab-btn active" data-tab="crop-type">🌾 Crop Type</button>
+                    <button class="cat-tab-btn" data-tab="season">🗓️ Seasons</button>
+                    <button class="cat-tab-btn" data-tab="method">🛠️ Farming Methods</button>
+                </div>
+
+                <!-- Crop Type Category -->
+                <div class="tab-content active" id="crop-type">
+                    <div class="category-grid">
+                        <div class="category-card crop-rice">
+                            <div class="card-icon">🍚</div>
+                            <h3>Rice Farming</h3>
+                            <p>Complete guide to growing rice including field preparation, transplanting, and water management.</p>
+                            <ul class="guide-list">
+                                <li>Field preparation and leveling</li>
+                                <li>Seed selection & germination</li>
+                                <li>Nursery management</li>
+                                <li>Transplanting techniques</li>
+                                <li>Water & nutrient management</li>
+                                <li>Pest & disease control</li>
+                                <li>Harvesting & threshing</li>
+                            </ul>
+                        </div>
+
+                        <div class="category-card crop-potato">
+                            <div class="card-icon">🥔</div>
+                            <h3>Potato Cultivation</h3>
+                            <p>Expert advice on potato farming from seed to harvest with maximum yield techniques.</p>
+                            <ul class="guide-list">
+                                <li>Soil preparation & amendments</li>
+                                <li>Seed potato selection</li>
+                                <li>Planting guidelines</li>
+                                <li>Earthing up procedures</li>
+                                <li>Irrigation management</li>
+                                <li>Pest & disease management</li>
+                                <li>Harvesting & storage</li>
+                            </ul>
+                        </div>
+
+                        <div class="category-card crop-vegetable">
+                            <div class="card-icon">🥬</div>
+                            <h3>Vegetable Production</h3>
+                            <p>Comprehensive guide for growing vegetables with market quality standards.</p>
+                            <ul class="guide-list">
+                                <li>Variety selection</li>
+                                <li>Seed & nursery care</li>
+                                <li>Transplanting & spacing</li>
+                                <li>Fertilizer application</li>
+                                <li>Mulching benefits</li>
+                                <li>Organic pest control</li>
+                                <li>Quality harvesting</li>
+                            </ul>
+                        </div>
+
+                        <div class="category-card crop-fruit">
+                            <div class="card-icon">🍎</div>
+                            <h3>Fruit Farming</h3>
+                            <p>Guide to establishing and maintaining fruit orchards with sustainable practices.</p>
+                            <ul class="guide-list">
+                                <li>Land selection & preparation</li>
+                                <li>Sapling selection & planting</li>
+                                <li>Training & pruning</li>
+                                <li>Nutrient management</li>
+                                <li>Pest & disease control</li>
+                                <li>Irrigation systems</li>
+                                <li>Harvesting techniques</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Season Category -->
+                <div class="tab-content" id="season">
+                    <div class="category-grid">
+                        <div class="category-card season-kharif">
+                            <div class="card-icon">☔</div>
+                            <h3>Kharif Season (Monsoon)</h3>
+                            <p>Guide for monsoon crops (June-September). Suitable for rice, maize, cotton, and pulses.</p>
+                            <ul class="guide-list">
+                                <li>Take advantage of rainfall</li>
+                                <li>Prepare fields for water logging</li>
+                                <li>Best crops: Rice, Maize, Cotton</li>
+                                <li>Drainage management</li>
+                                <li>Flood-resistant varieties</li>
+                                <li>Timely pest control</li>
+                                <li>Post-monsoon harvesting</li>
+                            </ul>
+                        </div>
+
+                        <div class="category-card season-rabi">
+                            <div class="card-icon">❄️</div>
+                            <h3>Rabi Season (Winter)</h3>
+                            <p>Winter crops (October-March). Ideal for wheat, pulses, and cool-season vegetables.</p>
+                            <ul class="guide-list">
+                                <li>Soil preparation for winter</li>
+                                <li>Best crops: Wheat, Pulses</li>
+                                <li>Irrigation planning</li>
+                                <li>Pest management</li>
+                                <li>Frost protection</li>
+                                <li>Fertilizer use</li>
+                                <li>Early harvest advantage</li>
+                            </ul>
+                        </div>
+
+                        <div class="category-card season-summer">
+                            <div class="card-icon">☀️</div>
+                            <h3>Summer Season (Hot)</h3>
+                            <p>Heat-tolerant crops (March-June). Focus on water conservation and suitable varieties.</p>
+                            <ul class="guide-list">
+                                <li>Water-efficient irrigation</li>
+                                <li>Mulching techniques</li>
+                                <li>Heat-resistant varieties</li>
+                                <li>Shade management</li>
+                                <li>Soil moisture retention</li>
+                                <li>Pest problems in heat</li>
+                                <li>Summer vegetable farming</li>
+                            </ul>
+                        </div>
+
+                        <div class="category-card season-perennial">
+                            <div class="card-icon">🌳</div>
+                            <h3>Year-Round Crops</h3>
+                            <p>Perennial crops and year-round farm management. Suitable for orchards and plantations.</p>
+                            <ul class="guide-list">
+                                <li>Plantation management</li>
+                                <li>Pruning schedules</li>
+                                <li>Soil conservation</li>
+                                <li>Off-season maintenance</li>
+                                <li>Inter-cropping options</li>
+                                <li>Long-term planning</li>
+                                <li>Sustainability measures</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Farming Methods Category -->
+                <div class="tab-content" id="method">
+                    <div class="category-grid">
+                        <div class="category-card method-organic">
+                            <div class="card-icon">🌿</div>
+                            <h3>Organic Farming</h3>
+                            <p>Sustainable agricultural practices without synthetic chemicals for healthy soil and crops.</p>
+                            <ul class="guide-list">
+                                <li>Compost preparation</li>
+                                <li>Crop rotation plans</li>
+                                <li>Natural pest control</li>
+                                <li>Biological methods</li>
+                                <li>Certification process</li>
+                                <li>Organic inputs</li>
+                                <li>Market opportunities</li>
+                            </ul>
+                        </div>
+
+                        <div class="category-card method-precision">
+                            <div class="card-icon">📡</div>
+                            <h3>Precision Farming</h3>
+                            <p>Technology-driven agriculture using IoT, GPS, and data analytics for optimal yields.</p>
+                            <ul class="guide-list">
+                                <li>Soil moisture sensors</li>
+                                <li>Drones for monitoring</li>
+                                <li>GPS-based equipment</li>
+                                <li>Data collection & analysis</li>
+                                <li>Variable rate application</li>
+                                <li>Weather forecasting</li>
+                                <li>Yield prediction</li>
+                            </ul>
+                        </div>
+
+                        <div class="category-card method-drip">
+                            <div class="card-icon">💧</div>
+                            <h3>Drip Irrigation</h3>
+                            <p>Water-efficient farming using drip systems for reduced consumption and better yield.</p>
+                            <ul class="guide-list">
+                                <li>System design & planning</li>
+                                <li>Installation guide</li>
+                                <li>Maintenance procedures</li>
+                                <li>Water scheduling</li>
+                                <li>Fertilizer timing</li>
+                                <li>Cost-benefit analysis</li>
+                                <li>Water conservation tips</li>
+                            </ul>
+                        </div>
+
+                        <div class="category-card method-integrated">
+                            <div class="card-icon">♻️</div>
+                            <h3>Integrated Farming</h3>
+                            <p>Combination of crops, livestock, and fishery for diversified income and sustainability.</p>
+                            <ul class="guide-list">
+                                <li>Farm planning layout</li>
+                                <li>Crop selection</li>
+                                <li>Livestock integration</li>
+                                <li>Waste management</li>
+                                <li>Nutrient cycling</li>
+                                <li>Income diversification</li>
+                                <li>Long-term sustainability</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detailed Instructions Section -->
+        <section class="detailed-instructions">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Step-by-Step Instructions & Best Practices</h2>
+                    <p>Detailed guides with practical tips for successful farming</p>
+                </div>
+
+                <div class="instruction-tabs">
+                    <button class="inst-tab-btn active" data-instruction="soil">Soil Management</button>
+                    <button class="inst-tab-btn" data-instruction="water">Water Management</button>
+                    <button class="inst-tab-btn" data-instruction="fertilizer">Fertilizer Use</button>
+                    <button class="inst-tab-btn" data-instruction="pest">Pest Control</button>
+                </div>
+
+                <!-- Soil Management Instructions -->
+                <div class="instruction-content active" id="soil">
+                    <div class="steps-container">
+                        <div class="instruction-card">
+                            <div class="step-number">1</div>
+                            <h4>Soil Testing</h4>
+                            <p><strong>What:</strong> Analyze soil properties before planting.</p>
+                            <ul class="tips">
+                                <li>💡 <strong>Tip:</strong> Test soil pH, NPK content, and organic matter</li>
+                                <li>💡 <strong>Best Practice:</strong> Test annually before planting season</li>
+                                <li>💡 <strong>Tool:</strong> Use soil test kits or laboratory services</li>
+                            </ul>
+                        </div>
+
+                        <div class="instruction-card">
+                            <div class="step-number">2</div>
+                            <h4>Organic Matter Addition</h4>
+                            <p><strong>What:</strong> Improve soil fertility with organic materials.</p>
+                            <ul class="tips">
+                                <li>💡 <strong>Tip:</strong> Add 5-10 tons of compost per hectare</li>
+                                <li>💡 <strong>Best Practice:</strong> Incorporate 2-3 months before planting</li>
+                                <li>💡 <strong>Material:</strong> Use farm manure, compost, or green manure</li>
+                            </ul>
+                        </div>
+
+                        <div class="instruction-card">
+                            <div class="step-number">3</div>
+                            <h4>pH Adjustment</h4>
+                            <p><strong>What:</strong> Adjust soil pH to optimal levels for crops.</p>
+                            <ul class="tips">
+                                <li>💡 <strong>Tip:</strong> Most crops prefer pH 6.0-7.5</li>
+                                <li>💡 <strong>Best Practice:</strong> Use lime to raise pH, sulfur to lower</li>
+                                <li>💡 <strong>Dosage:</strong> Follow soil test recommendations</li>
+                            </ul>
+                        </div>
+
+                        <div class="instruction-card">
+                            <div class="step-number">4</div>
+                            <h4>Field Preparation</h4>
+                            <p><strong>What:</strong> Prepare land for planting with proper tilling.</p>
+                            <ul class="tips">
+                                <li>💡 <strong>Tip:</strong> Plough 2-3 times for fine tilth</li>
+                                <li>💡 <strong>Best Practice:</strong> Level field and remove weeds completely</li>
+                                <li>💡 <strong>Timing:</strong> Complete 2 weeks before planting</li>
+                            </ul>
+                        </div>
+
+                        <div class="instruction-card">
+                            <div class="step-number">5</div>
+                            <h4>Mulching Application</h4>
+                            <p><strong>What:</strong> Cover soil to retain moisture and suppress weeds.</p>
+                            <ul class="tips">
+                                <li>💡 <strong>Tip:</strong> Use 5-10 cm layer of organic mulch</li>
+                                <li>💡 <strong>Best Practice:</strong> Keep 15 cm away from plant stems</li>
+                                <li>💡 <strong>Benefits:</strong> Reduces water loss, improves soil</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Water Management Instructions -->
+                <div class="instruction-content" id="water">
+                    <div class="steps-container">
+                        <div class="instruction-card">
+                            <div class="step-number">1</div>
+                            <h4>Assess Water Requirements</h4>
+                            <p><strong>What:</strong> Determine crop and soil water needs.</p>
+                            <ul class="tips">
+                                <li>💡 <strong>Tip:</strong> Consider rainfall, evapotranspiration, and soil type</li>
+                                <li>💡 <strong>Best Practice:</strong> Plan irrigation schedule seasonally</li>
+                                <li>💡 <strong>Tool:</strong> Use weather data and soil moisture sensors</li>
+                            </ul>
+                        </div>
+
+                        <div class="instruction-card">
+                            <div class="step-number">2</div>
+                            <h4>Choose Irrigation System</h4>
+                            <p><strong>What:</strong> Select appropriate water delivery method.</p>
+                            <ul class="tips">
+                                <li>💡 <strong>Options:</strong> Drip, sprinkler, flood, or furrow irrigation</li>
+                                <li>💡 <strong>Best Practice:</strong> Drip for vegetables, sprinkler for fields</li>
+                                <li>💡 <strong>Efficiency:</strong> Drip saves 30-50% water vs. flood</li>
+                            </ul>
+                        </div>
+
+                        <div class="instruction-card">
+                            <div class="step-number">3</div>
+                            <h4>Monitor Soil Moisture</h4>
+                            <p><strong>What:</strong> Check soil water content regularly.</p>
+                            <ul class="tips">
+                                <li>💡 <strong>Tip:</strong> Squeeze test: soil holds shape but crumbles easily</li>
+                                <li>💡 <strong>Best Practice:</strong> Check moisture at 15cm depth</li>
+                                <li>💡 <strong>Frequency:</strong> Monitor every 3-5 days during growing season</li>
+                            </ul>
+                        </div>
+
+                        <div class="instruction-card">
+                            <div class="step-number">4</div>
+                            <h4>Schedule Irrigation</h4>
+                            <p><strong>What:</strong> Plan irrigation timing and frequency.</p>
+                            <ul class="tips">
+                                <li>💡 <strong>Tip:</strong> Irrigate during early morning or evening</li>
+                                <li>💡 <strong>Best Practice:</strong> Avoid irrigation during rain or extreme heat</li>
+                                <li>💡 <strong>Frequency:</strong> Every 5-10 days depending on crop type</li>
+                            </ul>
+                        </div>
+
+                        <div class="instruction-card">
+                            <div class="step-number">5</div>
+                            <h4>Harvest Rainwater</h4>
+                            <p><strong>What:</strong> Collect and store rainfall for dry periods.</p>
+                            <ul class="tips">
+                                <li>💡 <strong>Tip:</strong> Build ponds or tanks during monsoon</li>
+                                <li>💡 <strong>Best Practice:</strong> 1 hectare can collect 600,000 liters</li>
+                                <li>💡 <strong>Use:</strong> Supplement irrigation needs year-round</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fertilizer Instructions -->
+                <div class="instruction-content" id="fertilizer">
+                    <div class="steps-container">
+                        <div class="instruction-card">
+                            <div class="step-number">1</div>
+                            <h4>Analyze Soil Nutrients</h4>
+                            <p><strong>What:</strong> Test nitrogen, phosphorus, and potassium levels.</p>
+                            <ul class="tips">
+                                <li>💡 <strong>Tip:</strong> Get soil tested at agricultural extension office</li>
+                                <li>💡 <strong>Best Practice:</strong> Test every 2-3 years</li>
+                                <li>💡 <strong>Cost:</strong> Small fee for detailed nutrient analysis</li>
+                            </ul>
+                        </div>
+
+                        <div class="instruction-card">
+                            <div class="step-number">2</div>
+                            <h4>Calculate Fertilizer Needs</h4>
+                            <p><strong>What:</strong> Determine exact fertilizer quantities.</p>
+                            <ul class="tips">
+                                <li>💡 <strong>Formula:</strong> (Desired level - Current level) × Area</li>
+                                <li>💡 <strong>Best Practice:</strong> Follow soil test recommendations</li>
+                                <li>💡 <strong>Tip:</strong> Never exceed recommended doses</li>
+                            </ul>
+                        </div>
+
+                        <div class="instruction-card">
+                            <div class="step-number">3</div>
+                            <h4>Choose Fertilizer Type</h4>
+                            <p><strong>What:</strong> Select organic or inorganic fertilizers.</p>
+                            <ul class="tips">
+                                <li>💡 <strong>Organic:</strong> Compost, manure, bone meal (slow release)</li>
+                                <li>💡 <strong>Inorganic:</strong> NPK packages (quick release)</li>
+                                <li>💡 <strong>Best Practice:</strong> Mix both for balanced nutrition</li>
+                            </ul>
+                        </div>
+
+                        <div class="instruction-card">
+                            <div class="step-number">4</div>
+                            <h4>Apply at Right Time</h4>
+                            <p><strong>What:</strong> Time fertilizer application to crop needs.</p>
+                            <ul class="tips">
+                                <li>💡 <strong>Timing:</strong> Base at planting, top-dress during growth</li>
+                                <li>💡 <strong>Best Practice:</strong> Apply before irrigation for absorption</li>
+                                <li>💡 <strong>Frequency:</strong> 2-3 applications during season</li>
+                            </ul>
+                        </div>
+
+                        <div class="instruction-card">
+                            <div class="step-number">5</div>
+                            <h4>Monitor Crop Response</h4>
+                            <p><strong>What:</strong> Observe crop health and adjust if needed.</p>
+                            <ul class="tips">
+                                <li>💡 <strong>Yellowing:</strong> May indicate nitrogen deficiency</li>
+                                <li>💡 <strong>Purple leaves:</strong> Phosphorus deficiency</li>
+                                <li>💡 <strong>Action:</strong> Apply corrective fertilizer promptly</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pest Control Instructions -->
+                <div class="instruction-content" id="pest">
+                    <div class="steps-container">
+                        <div class="instruction-card">
+                            <div class="step-number">1</div>
+                            <h4>Identify Common Pests</h4>
+                            <p><strong>What:</strong> Recognize pest signs and damage patterns.</p>
+                            <ul class="tips">
+                                <li>💡 <strong>Inspect:</strong> Check leaves, stems, and soil regularly</li>
+                                <li>💡 <strong>Best Practice:</strong> Scout fields weekly during season</li>
+                                <li>💡 <strong>Tools:</strong> Use magnifying glass for small insects</li>
+                            </ul>
+                        </div>
+
+                        <div class="instruction-card">
+                            <div class="step-number">2</div>
+                            <h4>Use Prevention Methods</h4>
+                            <p><strong>What:</strong> Stop pests before they become problems.</p>
+                            <ul class="tips">
+                                <li>💡 <strong>Method:</strong> Crop rotation, resistant varieties, sanitation</li>
+                                <li>💡 <strong>Best Practice:</strong> Remove infected plant debris promptly</li>
+                                <li>💡 <strong>Timing:</strong> Prevention is easier than cure</li>
+                            </ul>
+                        </div>
+
+                        <div class="instruction-card">
+                            <div class="step-number">3</div>
+                            <h4>Apply Organic Control</h4>
+                            <p><strong>What:</strong> Use natural pest management methods.</p>
+                            <ul class="tips">
+                                <li>💡 <strong>Methods:</strong> Neem spray, insecticidal soap, beneficial bugs</li>
+                                <li>💡 <strong>Best Practice:</strong> Spray early morning or late evening</li>
+                                <li>💡 <strong>Dose:</strong> Follow package instructions carefully</li>
+                            </ul>
+                        </div>
+
+                        <div class="instruction-card">
+                            <div class="step-number">4</div>
+                            <h4>Monitor Results</h4>
+                            <p><strong>What:</strong> Track effectiveness of pest control measures.</p>
+                            <ul class="tips">
+                                <li>💡 <strong>Tip:</strong> Observe pest population reduction after 5-7 days</li>
+                                <li>💡 <strong>Best Practice:</strong> Reapply if needed after 10-14 days</li>
+                                <li>💡 <strong>Record:</strong> Keep notes for future reference</li>
+                            </ul>
+                        </div>
+
+                        <div class="instruction-card">
+                            <div class="step-number">5</div>
+                            <h4>Chemical Control (Last Resort)</h4>
+                            <p><strong>What:</strong> Use pesticides only if organic methods fail.</p>
+                            <ul class="tips">
+                                <li>💡 <strong>Warning:</strong> Always read and follow label instructions</li>
+                                <li>💡 <strong>Safety:</strong> Wear protective gear while applying</li>
+                                <li>💡 <strong>Pre-harvest:</strong> Follow waiting period before harvest</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <section class="impact-stats">
+            <div class="stat-box">
+                <h2 class="counter">50k+</h2>
+                <p>Farmers Registered</p>
+            </div>
+            <div class="stat-box">
+                <h2 class="counter">120</h2>
+                <p>Hub Centers</p>
+            </div>
+            <div class="stat-box">
+                <h2 class="counter">15%</h2>
+                <p>Yield Increase</p>
+            </div>
+            <div class="stat-box">
+                <h2 class="counter">24/7</h2>
+                <p>Expert Support</p>
+            </div>
+        </section>
+        <section class="cta-expert">
+            <div class="cta-content">
+                <h2>Facing issues with your crops?</h2>
+                <p>Contact our certified agronomists for immediate solutions via phone or video call.</p>
+                <div class="cta-buttons">
+                    <a href="tel:+8001866137929" class="btn-main">📞 Call +800 1866137929</a>
+                    <a href="#" class="btn-whatsapp">Chat on WhatsApp</a>
+                </div>
+            </div>
+        </section>
+        <section class="live-data-bar">
+            <div class="data-item">
+                <span class="label">📍 Dhaka:</span>
+                <span class="value" id="weather-info">Loading...</span>
+            </div>
+            <div class="data-item">
+                <span class="label">🌾 Fine Rice (KG):</span>
+                <span class="value">৳ 68.00</span>
+            </div>
+            <div class="data-item">
+                <span class="label">🥔 Potato (KG):</span>
+                <span class="value">৳ 35.00</span>
+            </div>
+            <div class="data-item">
+                <span class="label">📅 Date:</span>
+                <span class="value" id="bd-date">Loading...</span>
+            </div>
+            <div class="data-item">
+                <span class="label">⏰ Time:</span>
+                <span class="value" id="bd-time">Loading...</span>
+            </div>
+        </section>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
